@@ -1,0 +1,19 @@
+T=int(input())
+T=int(T)
+for i in range(1,T+1):
+    N,K=input().split()
+    N,K=int(N),int(K)
+    if(N%2==0):
+        if(K<=(N/2)):
+            S=N-(N%K)
+            output=(S*S)//(K*K)
+            print(output)
+        elif(K>(N/2)):
+            print("1")
+    else:
+        if(K<(N/2)):
+            S=N-(N%K)
+            output=(S*S)//(K*K)
+            print(output)
+        elif(K>(N/2)):
+            print("1")
